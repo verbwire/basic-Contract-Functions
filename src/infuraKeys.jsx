@@ -1,3 +1,4 @@
-const infuraKeys = 'a371b9ac48e849dca4dfcecaba87392a';
+// Enter your infura keys here. You can get them from https://infura.io/
+const infuraKeys = '';
 
 export default  infuraKeys;

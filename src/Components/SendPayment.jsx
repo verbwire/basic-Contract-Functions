@@ -30,9 +30,10 @@ function SendPayment() {
   // Contract Interaction 
   const { config, error } = usePrepareContractWrite({
     address: contractAddress,
-    abi: parseAbi(["function mint(address recipient, string memory tokenURI, uint256 quantity) payable"]),
-    functionName: "mint",
-    args: [address, metadataURI, 1]
+    abi: parseAbi(["function makePayment( string memory data ) public payable"]),
+    functionName: "makePayment",
+    value: parseEther("0.01"),
+    args: [' '],
   });  
 
   const { write } =  useContractWrite(config);

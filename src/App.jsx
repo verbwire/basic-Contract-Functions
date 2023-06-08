@@ -9,7 +9,7 @@ import infuraKeys from "./infuraKeys";
 import { writeContract } from '@wagmi/core'
 import { parseAbi } from "viem";
 import SendPayment from "./Components/sendPayment";
-import PublicMint from "./Components/PublicMint";
+import PublicMint from "./Components/PublicMint1155";
 import PublicMint721 from "./Components/PublicMint721";
 import AllowlistMint721 from "./Components/AllowlistMint721";
 import AllowlistMint1155 from "./Components/AllowlistMint1155";
@@ -35,10 +35,13 @@ function App() {
   return (
     <>
       <WagmiConfig config={config}>
+
+        {/*  Uncomment the required component to run it */}
+
         {/* <SendPayment />  */}
         {/* <PublicMint /> */}
-        <PublicMint721 />
-        {/* <AllowlistMint721 /> */}
+        {/* <PublicMint721 /> */}
+        {/* <AllowlistMint721 />  */}
         {/* <AllowlistMint1155 /> */}
 
       </WagmiConfig>
