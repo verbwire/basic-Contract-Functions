@@ -20,20 +20,37 @@ To allowlist addresses, use the following endpoint: [Endpoint: Add to Allowlist]
 
 The following functions are required to run the various components of the application:
 
-- Public Mint ERC721 NFT: `function mint(address recipient, string memory tokenURI, uint256 quantity) payable`
-- Public Mint ERC1155 NFT: `function mint(uint256 id, uint256 quantity) external payable`
-- Allowlist Mint ERC721 NFT: `function allowlistMint(address recipient, string memory tokenURI, uint256 quantity) payable`
-- Allowlist Mint ERC1155 NFT: `function allowlistMint(uint256 id, uint256 qty) external payable`
+- Public Mint ERC721 NFT: 
+  ```js
+  function mint(address recipient, string memory tokenURI, uint256 quantity) payable
+  ```
+- Public Mint ERC1155 NFT: 
+  ```js
+  function mint(uint256 id, uint256 quantity) external payable
+  ```
+- Allowlist Mint ERC721 NFT: 
+  ```js
+  function allowlistMint(address recipient, string memory tokenURI, uint256 quantity) payable
+  ```
+- Allowlist Mint ERC1155 NFT: 
+  ```js
+  function allowlistMint(uint256 id, uint256 qty) external payable
+  ```
 
 **Note:** Before running the `allowlistMint` functions, the address must be allowlisted using the endpoint mentioned earlier.
 
-- Send Payment to Commerce Contract: `function makePayment(string memory data) public payable`
+- Send Payment to Commerce Contract: 
+  ```js
+  function makePayment(string memory data) public payable
+  ```
 
 ## Running the Application
 
 To run the application, execute the following command:
 
-`npm run dev`
+```js
+npm run dev
+```
 
 This command will start the application and make it available for use.
 
