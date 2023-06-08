@@ -16,7 +16,8 @@ function AllowlistMint721() {
   const { address, isConnected } = useAccount();
   const { connectAsync, connectors } = useConnect();
 
-  // ERC721 Contract Address
+  // ERC721 Advanced Contract Address 
+  // Note: Must allowlist the address before using the function 
   const contractAddress = "0x853fA19FB32C5F2a2951168B78ED9eEBF1D7766C";
 
   // IPFS Metadata URI

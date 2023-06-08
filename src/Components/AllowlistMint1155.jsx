@@ -16,7 +16,8 @@ function AllowlistMint1155() {
   const { address, isConnected } = useAccount();
   const { connectAsync, connectors } = useConnect();
 
-  // ERC1155 Contract Address
+  // ERC1155 Advanced Contract Address 
+  // Note: Must allowlist the address before using the function 
   const contractAddress = "0xD1c130d8FA022d764F61Dac7a63641Ae1eB9b4a8";
 
 

@@ -15,7 +15,7 @@ function SendPayment() {
   const { address, isConnected } = useAccount();
   const { connectAsync, connectors } = useConnect();
 
-  // ERC721 Contract Address
+  // Commerce Contract Address Deployed with Verbwire.
   const contractAddress = "0x853fA19FB32C5F2a2951168B78ED9eEBF1D7766C";
 
   // IPFS Metadata URI

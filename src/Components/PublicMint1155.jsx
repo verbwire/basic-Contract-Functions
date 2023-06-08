@@ -16,6 +16,8 @@ function PublicMint() {
   const { address, isConnected } = useAccount();
   const { connectAsync, connectors } = useConnect();
 
+
+  // ERC1155 Advanced Contract Address
   const contractAddress = "0xF91f977C497d79551C327D27346527e7c1192cE8";
 
   //Wallet Connect Using Metamask Connector - Wagmi
